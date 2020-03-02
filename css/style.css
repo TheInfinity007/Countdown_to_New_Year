@@ -6,7 +6,7 @@
 }
 body
 {
-	background:url("../img/landscape.jpg");
+	background:url("../img/landscape-bg.jpg");
 	background-attachment: fixed;
 	background-blend-mode: hard-light;
 	background-size: 100%;
@@ -20,7 +20,7 @@ body
 	left:100px;
 	right:100px;
 	bottom:80px;	
-	background:url("../img/landscape.jpeg");
+	background:url("../img/landscape-bg.jpeg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
