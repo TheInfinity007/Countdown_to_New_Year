@@ -6,12 +6,14 @@
 }
 body
 {
-	background:url("../img/landscape.jpeg");
+	background:#dcdcdc url("../img/landscape.jpeg");
 	background-attachment: fixed;
 	background-blend-mode: hard-light;
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size:cover;
+	text-align:center;
 }
 #myContainer
 {
@@ -24,6 +26,7 @@ body
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size:cover;
 	display:flex;
 	justify-content: center;
 	align-items: center;
@@ -94,4 +97,78 @@ body
 .countdown div#second:before
 {
 	content: 'Seconds';
+}
+
+@media(max-width: 768px)
+{
+	#myContainer
+	{
+		position:absolute;		
+		top:40px;
+		background:transparent;
+		background-size: cover;
+		box-shadow: none;
+		background-blend-mode: hard-light;
+	}
+	#myContainer h2
+	{
+		text-align:center;
+		font-size:8em;
+		line-height:0.6em;
+		color:#333;
+		color:#f00;
+	}
+	#myContainer h2 span#head-text
+	{
+		display:block;
+		line-height: 2em;
+		font-weight:300;
+		letter-spacing: 6px;
+		font-size:0.2em;
+		margin-bottom:15px;
+		text-align:center;
+	}
+	.countdown
+	{
+		display: flex;
+		margin-top:50px;
+		position:relative;
+	}
+	.countdown div
+	{
+		position:relative;
+		width:80px;
+		height:80px;
+		line-height: 80px;
+		text-align:center;
+		background: #333;
+		color:#fff;
+		margin:0 10px;
+		font-size:2em;
+		font-weight: 500;
+	}
+	.countdown div:before
+	{
+		content: '';
+		position: absolute;
+		background: #ff0;
+		bottom:-20px;
+		height:25px;
+		width:100%;
+		left:0;
+		font-size:0.35em;
+		line-height: 25px;
+		font-weight: 300;
+		color: #333;
+	}
+}
+@media(max-width:320px)
+{
+	.countdown
+	{
+		display: flex;
+		margin-top:50px;
+		position:relative;
+		left:15px;
+	}
 }
