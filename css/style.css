@@ -1,0 +1,97 @@
+*
+{
+	margin:0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	background:url("../img/landscape-bg.JPEG");
+	background-attachment: fixed;
+	background-blend-mode: hard-light;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#myContainer
+{
+	position: absolute;
+	top:80px;
+	left:100px;
+	right:100px;
+	bottom:80px;	
+	background:url("../img/landscape-bg.JPEG");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 50px 50px rgba(0,0,0,0.5),
+						  0 0 0 100px rgba(0,0,0,0.1);
+}
+#myContainer h2
+{
+	text-align:center;
+	font-size:10em;
+	line-height:0.7em;
+	color:#333;
+	color:#f00;
+	margin-top:-80px;
+}
+#myContainer h2 span#head-text
+{
+	display:block;
+	font-weight:300;
+	letter-spacing: 6px;
+	font-size:0.2em;
+}
+.countdown
+{
+	display: flex;
+	margin-top:50px;
+}
+.countdown div
+{
+	position:relative;
+	width:100px;
+	height:100px;
+	line-height: 100px;
+	text-align:center;
+	background: #333;
+	color:#fff;
+	margin:0 15px;
+	font-size:3em;
+	font-weight: 500;
+}
+.countdown div:before
+{
+	content: '';
+	position: absolute;
+	background: #ff0;
+	bottom:-30px;
+	height:35px;
+	width:100%;
+	left:0;
+	font-size:0.35em;
+	line-height: 35px;
+	font-weight: 300;
+	color: #333;
+}
+.countdown div#day:before
+{
+	content: 'Days';
+}
+.countdown div#hour:before
+{
+	content: 'Hours';
+}
+.countdown div#minute:before
+{
+	content: 'Minutes';
+}
+.countdown div#second:before
+{
+	content: 'Seconds';
+}
